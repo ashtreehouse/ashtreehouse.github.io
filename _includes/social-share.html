@@ -42,6 +42,14 @@
     </a>
   {% endif %}
 
+  {% if site.share-links-active.pinterest %}
+  
+    <a href="https://pinterest.com/pin/create/button/?url=&media={{ page.url | absolute_url | url_encode }}"
+      class="btn btn-social-icon btn-pinterest" title="Share on pinterest">
+      <span class="fab fa-fw fa-pinterest" aria-hidden="true"></span>
+      <span class="sr-only">pinterest</span>
+    </a>
+  {% endif %}
 </section>
 
 {% endif %}
